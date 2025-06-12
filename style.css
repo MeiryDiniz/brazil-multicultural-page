@@ -1,0 +1,97 @@
+/* Reset default spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f0f8ff;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+  }
+  
+  /* Header */
+  header {
+    background-color: #006400;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  header h1 {
+    font-size: 2em;
+  }
+  
+  header select {
+    margin-top: 10px;
+    padding: 5px;
+  }
+  
+  /* Main sections */
+  main section {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  main h2 {
+    color: #006400;
+    margin-bottom: 10px;
+  }
+  
+  main ul {
+    margin-left: 20px;
+    list-style: disc;
+  }
+  
+  main img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+    border-radius: 8px;
+  }
+  
+  /* Quiz section */
+  form ol {
+    margin-left: 20px;
+  }
+  
+  form li {
+    margin-top: 15px;
+  }
+  
+  button {
+    margin-top: 15px;
+    background-color: #228b22;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  button:hover {
+    background-color: #006400;
+  }
+  
+  #result {
+    font-weight: bold;
+    margin-top: 15px;
+    color: #008000;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    margin-top: 40px;
+    color: #444;
+    font-size: 0.9em;
+  }
+  
