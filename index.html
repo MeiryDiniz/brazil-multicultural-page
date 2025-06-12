@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Discover Brazil</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1 data-i18n="title">Welcome to Brazil!</h1>
+    <p data-i18n="intro">Explore Brazil’s culture, nature, food, and more. Learn about my hometown Maringá!</p>
+    <select id="languageSwitcher">
+      <option value="en">🇬🇧 English</option>
+      <option value="pt">🇧🇷 Português</option>
+      <option value="pl">🇵🇱 Polski</option>
+      <option value="ru">🇷🇺 Русский</option>
+    </select>
+  </header>
+
+  <main>
+    <section>
+      <h2 data-i18n="culture_title">Culture & Festivals</h2>
+      <img src="assets/carnival.jpg" alt="Carnival in Brazil" />
+      <p data-i18n="culture_text">
+        Brazil is famous for its Carnival celebration with parades, samba music, and colorful costumes.
+      </p>
+    </section>
+
+    <section>
+      <h2 data-i18n="food_title">Brazilian Food</h2>
+      <img src="assets/feijoada.jpg" alt="Feijoada" />
+      <p data-i18n="food_text">
+        Try Feijoada, a black bean and meat stew, or Brigadeiros, our chocolate sweets.
+      </p>
+    </section>
+
+    <section>
+      <h2 data-i18n="nature_title">Nature & Animals</h2>
+      <img src="assets/amazon.jpg" alt="Amazon Rainforest" />
+      <p data-i18n="nature_text">
+        The Amazon Rainforest is the world’s largest. Brazil is home to toucans, jaguars, and sloths.
+      </p>
+    </section>
+
+    <section>
+      <h2 data-i18n="maringa_title">My City: Maringá</h2>
+      <img src="assets/maringa.jpg" alt="Maringá Cathedral" />
+      <p data-i18n="maringa_text">
+        Maringá is in southern Brazil. It’s known for green parks, modern architecture, and the beautiful cathedral.
+      </p>
+    </section>
+
+    <section>
+      <h2 data-i18n="quiz_title">Brazil Quiz</h2>
+      <form id="quizForm">
+        <ol>
+          <li data-i18n="q1">What is the capital of Brazil?</li>
+          <input type="radio" name="q1" value="a"> Rio de Janeiro<br>
+          <input type="radio" name="q1" value="b"> Brasília<br>
+          <input type="radio" name="q1" value="c"> São Paulo<br><br>
+
+          <li data-i18n="q2">Which language is spoken in Brazil?</li>
+          <input type="radio" name="q2" value="a"> Spanish<br>
+          <input type="radio" name="q2" value="b"> English<br>
+          <input type="radio" name="q2" value="c"> Portuguese<br><br>
+
+          <li data-i18n="q3">What is Brazil famous for?</li>
+          <input type="radio" name="q3" value="a"> Opera<br>
+          <input type="radio" name="q3" value="b"> Carnival<br>
+          <input type="radio" name="q3" value="c"> Ice Hockey<br><br>
+
+          <li data-i18n="q4">Where is the Amazon Rainforest?</li>
+          <input type="radio" name="q4" value="a"> Brazil<br>
+          <input type="radio" name="q4" value="b"> Canada<br>
+          <input type="radio" name="q4" value="c"> India<br><br>
+
+          <li data-i18n="q5">What sport is Brazil known for?</li>
+          <input type="radio" name="q5" value="a"> Cricket<br>
+          <input type="radio" name="q5" value="b"> Football (Soccer)<br>
+          <input type="radio" name="q5" value="c"> Baseball<br>
+        </ol>
+        <button type="button" onclick="checkQuiz()" data-i18n="submit_btn">Submit</button>
+      </form>
+      <p id="result"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Created for Multicultural Day 🌍</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
