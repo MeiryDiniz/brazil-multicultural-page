@@ -94,4 +94,17 @@
     color: #444;
     font-size: 0.9em;
   }
-  
+  .quiz-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 12px 20px;
+    background-color: #006400;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  .quiz-button:hover {
+    background-color: #004d00;
+  }
+    

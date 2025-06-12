@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Brazil Quiz</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Brazil Quiz</h1>
+    <p>Test your knowledge about Brazil!</p>
+  </header>
+
+  <main>
+    <form id="quizForm">
+      <ol>
+        <li>What is the capital of Brazil?</li>
+        <input type="radio" name="q1" value="a"> Rio de Janeiro<br>
+        <input type="radio" name="q1" value="b"> Brasília<br>
+        <input type="radio" name="q1" value="c"> São Paulo<br><br>
+
+        <li>Which language is spoken in Brazil?</li>
+        <input type="radio" name="q2" value="a"> Spanish<br>
+        <input type="radio" name="q2" value="b"> English<br>
+        <input type="radio" name="q2" value="c"> Portuguese<br><br>
+
+        <li>What is Brazil famous for?</li>
+        <input type="radio" name="q3" value="a"> Opera<br>
+        <input type="radio" name="q3" value="b"> Carnival<br>
+        <input type="radio" name="q3" value="c"> Ice Hockey<br><br>
+
+        <li>Where is the Amazon Rainforest?</li>
+        <input type="radio" name="q4" value="a"> Brazil<br>
+        <input type="radio" name="q4" value="b"> Canada<br>
+        <input type="radio" name="q4" value="c"> India<br><br>
+
+        <li>What sport is Brazil known for?</li>
+        <input type="radio" name="q5" value="a"> Cricket<br>
+        <input type="radio" name="q5" value="b"> Football (Soccer)<br>
+        <input type="radio" name="q5" value="c"> Baseball<br>
+      </ol>
+      <button type="button" onclick="checkQuiz()">Submit</button>
+      <button type="button" onclick="resetQuiz()">Clear Score</button>
+    </form>
+
+    <p id="result"></p>
+
+    <p><a href="index.html" class="quiz-button">← Back to Main Page</a></p>
+  </main>
+
+  <footer>
+    <p>Multicultural Day – Brazil | Meiry</p>
+  </footer>
+
+  <script>
+    function checkQuiz() {
+      const answers = {
+        q1: "b",
+        q2: "c",
+        q3: "b",
+        q4: "a",
+        q5: "b"
+      };
+
+      let score = 0;
+      for (let key in answers) {
+        const selected = document.querySelector(`input[name="${key}"]:checked`);
+        if (selected && selected.value === answers[key]) {
+          score++;
+        }
+      }
+
+      document.getElementById("result").textContent = `You scored ${score} out of 5!`;
+    }
+
+    function resetQuiz() {
+      document.getElementById("quizForm").reset();
+      document.getElementById("result").textContent = "";
+    }
+  </script>
+</body>
+</html>
