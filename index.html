@@ -1,96 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title data-i18n="page_title">Discover Brazil</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-i18n="page_title">Discover Brazil</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-  <header>
-    <h1 data-i18n="welcome">Welcome to Brazil!</h1>
-    <p data-i18n="intro">
-      Brazil is the largest country in South America. Its capital is Brasília. People speak Portuguese, and it’s famous for football, the Amazon, Christ the Redeemer, and Carnival!
-    </p>
-    <label for="languageSwitcher" data-i18n="language">Choose Language:</label>
-    <select id="languageSwitcher">
-      <option value="en">🇬🇧 English</option>
-      <option value="pt">🇧🇷 Português</option>
-      <option value="pl">🇵🇱 Polski</option>
-      <option value="ru">🇷🇺 Русский</option>
-    </select>
-  </header>
+    <header>
+        <h1 data-i18n="page_title">Discover Brazil</h1>
+        <p data-i18n="intro">Explore Brazil’s culture, nature, food, and more. Learn about my hometown Maringá!</p>
 
-  <main>
-    <section>
-      <h2 data-i18n="culture">Festivals & Culture</h2>
-      <p data-i18n="culture_text">
-        Brazil celebrates Carnival with samba music, colourful costumes, and big parades. In June, Festa Junina features bonfires, folk dancing, and traditional foods. Capoeira is a unique martial art mixed with music and dance.
-      </p>
-    </section>
+        <!-- Google Translate -->
+        <div id="google_translate_element"></div>
+        <script type="text/javascript">
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement(
+                    { pageLanguage: 'en' },
+                    'google_translate_element'
+                );
+            }
+        </script>
+        <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    </header>
 
-    <section>
-      <h2 data-i18n="food">Flavours of Brazil</h2>
-      <ul>
-        <li>🍛 <strong>Feijoada</strong> – a stew with beans and meat</li>
-        <li>🧀 <strong>Pão de Queijo</strong> – cheesy bread balls</li>
-        <li>🍫 <strong>Brigadeiro</strong> – chocolate truffles</li>
-        <li>🍇 <strong>Açaí Bowl</strong> – frozen Amazonian fruit treat</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2 data-i18n="nature">Brazilian Nature</h2>
-      <p data-i18n="nature_text">
-        Brazil is home to the Amazon Rainforest and River, pink dolphins, jaguars, toucans, and sloths. You can also visit the stunning Iguaçu Falls in Paraná.
-      </p>
-    </section>
-
-    <section>
-      <h2 data-i18n="kids">Kids Like You in Brazil</h2>
-      <p data-i18n="kids_text">
-        Kids in Brazil love football and dancing. School often ends around 1 p.m. Learn some Portuguese:
-        <ul>
-          <li>Olá = Hello</li>
-          <li>Tudo bem? = How are you?</li>
-          <li>Tchau = Bye</li>
-          <li>Obrigado/a = Thank you</li>
-        </ul>
-      </p>
-    </section>
-
-    <section>
-      <h2 data-i18n="maringa">My City: Maringá</h2>
-      <p data-i18n="maringa_text">
-        📍 Maringá is a beautiful city in Paraná, southern Brazil. It has tree-lined streets, modern design, and is one of the best cities to live in Brazil. It’s known for the Cathedral of Maringá and many parks like Parque do Ingá and Parque do Japão.
-      </p>
-    </section>
-
-    <section>
-      <h2 data-i18n="compare">Brazil vs Ireland</h2>
-      <ul>
-        <li>🌍 Brazil is 3.5x bigger than Ireland</li>
-        <li>🌦️ Brazil is tropical; Ireland is mild and rainy</li>
-        <li>🗣️ Brazil speaks Portuguese; Ireland speaks English and Irish</li>
-        <li>🎉 Brazil has Carnival; Ireland has St. Patrick's Day</li>
-        <li>🎵 Samba vs Irish music; 🍲 Feijoada vs Irish Stew</li>
-      </ul>
-    </section>
-
-    <section>
-        <h2 data-i18n="quiz_title">Test Your Knowledge</h2>
-        <p data-i18n="quiz_intro">
-          Want to see what you’ve learned? Click the button below to take the quiz!
+    <main>
+        
+        <p style="text-align: center; margin-top: 30px;">
+            <a href="gallery.html" class="quiz-button" data-i18n="view_gallery">🖼️ Visit the Photo Gallery</a>
         </p>
-        <a href="quiz.html" class="quiz-button" data-i18n="go_to_quiz">Go to Quiz</a>
-      </section>
-      
-  </main>
+<br>
+        <section>
+            <h2 data-i18n="culture">Festivals & Culture</h2>
+            <p data-i18n="culture_text">
+                Brazil celebrates Carnival with samba music, colourful costumes, and big parades. In June, Festa Junina
+                features bonfires, folk dancing, and traditional foods. Capoeira is a unique martial art mixed with
+                music and dance.
+            </p>
+        </section>
 
-  <footer>
-    <p>🌎 Multicultural Day – Brazil | Made by Meiry</p>
-  </footer>
+        <section>
+            <h2 data-i18n="food">Flavours of Brazil</h2>
+            <ul>
+                <li>🍛 <strong>Feijoada</strong> – a stew with beans and meat</li>
+                <li>🧀 <strong>Pão de Queijo</strong> – cheesy bread balls</li>
+                <li>🍫 <strong>Brigadeiro</strong> – chocolate truffles</li>
+                <li>🍇 <strong>Açaí Bowl</strong> – frozen Amazonian fruit treat</li>
+            </ul>
+        </section>
 
-  <script src="script.js"></script>
+        <section>
+            <h2 data-i18n="nature">Brazilian Nature</h2>
+            <p data-i18n="nature_text">
+                Brazil is home to the Amazon Rainforest and River, pink dolphins, jaguars, toucans, and sloths. You can
+                also visit the stunning Iguaçu Falls in Paraná.
+            </p>
+        </section>
+
+        <section>
+            <h2 data-i18n="kids">Learning some Portuguese</h2>
+            <p data-i18n="kids_text">
+            <ul>
+                <li>👋 Hello – <strong>Olá</strong></li>
+                <li>😊 How are you? – <strong>Tudo bem?</strong></li>
+                <li>👋 Bye – <strong>Tchau</strong></li>
+                <li>🙏 Thank you/a – <strong>Obrigado</strong></li>
+                <li>🙏 Please - <strong>Por favor</strong></li>
+                <li>🌳 Amazon Rainforest – <strong>Floresta Amazônica</strong></li>
+                <li>🌊 Amazon River – <strong>Rio Amazonas</strong></li>
+                <li>🐆 Jaguar – <strong>Onça-pintada</strong></li>
+                <li>🦜 Toucan – <strong>Tucano</strong></li>
+                <li>🦥 Sloth – <strong>Bicho-preguiça</strong></li>
+                <li>🙏 Christ the Redeemer – <strong>Cristo Redentor</strong></li>
+                <li>🎭 Carnival – <strong>Carnaval</strong></li>
+                <li>🍛 Feijoada – <strong>Feijoada</strong></li>
+                <li>🧀 Cheese Bread – <strong>Pão de Queijo</strong></li>
+                <li>🍫 Brigadeiro – <strong>Brigadeiro</strong></li>
+                <li>🥋 Capoeira – <strong>Capoeira</strong></li>
+                <li>⚽ Football – <strong>Futebol</strong></li>
+            </ul>
+            </p>
+        </section>
+
+        <section>
+            <h2 data-i18n="maringa">My City: Maringá</h2>
+            <p>We came from Southern Brazil</p>
+            <ul>
+                <li>📍 <strong>Maringá, Paraná:</strong> A beautiful city in the state of Paraná, in the South of
+                    Brazil.</li>
+                <li>🌳 Known for its green spaces, tree-lined streets, and modern urban design.</li>
+                <li>🏙️ One of the best cities to live in Brazil.</li>
+                <li>🛐 Famous landmark: Catedral Basílica Menor Nossa Senhora da Glória (Cathedral of Maringá)</li>
+                <li>🎓 Home to many universities and cultural events.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2 data-i18n="compare">Brazil vs Ireland</h2>
+            <ul>
+                <li>🌍 <strong>Geography:</strong> Brazil is the 5th largest country in the world X Ireland is a small
+                    island in Europe, known for green hills.</li>
+                <li>🌦️ <strong>Weather:</strong> Brazil has tropical weather; it's hot in most places X Ireland has a
+                    mild, rainy climate – four seasons in one day!</li>
+                <li>🗣️ <strong>Language:</strong> Brazil speaks Portuguese X Ireland speaks English and Irish
+                    (Gaeilge).</li>
+                <li>🎉 <strong>Festivals:</strong> Brazil: Carnival with parades and samba X Ireland: St. Patrick’s Day
+                    – green clothes and music!</li>
+                <li>🎵 <strong>Music & Dance:</strong> Brazil: Samba and Bossa Nova X Ireland: Irish music and dancing
+                    (like Riverdance).</li>
+                <li>🍲 <strong>Food:</strong> Brazil: Feijoada, Cheese Bread, Brigadeiro X Ireland: Irish stew, Soda
+                    bread, Boxty.</li>
+                <li>⚽ <strong>Sports:</strong> Brazil: Football (soccer) – World Cup champions! X Ireland: Gaelic
+                    football, hurling, rugby.</li>
+                <li>🧒 <strong>School:</strong> Brazil: Morning or afternoon shifts X Ireland: School from 9 a.m. to 3
+                    p.m.</li>
+                <li>📏 <strong>Geography Fun Fact:</strong> Ireland: ~70,000 km². São Paulo state: ~248,000 km² (3.5x
+                    bigger!) X São Paulo city has more people than all of Ireland!</li>
+            </ul>
+        </section>
+
+        <section>
+            <div style="text-align: center; margin-top: 30px;">
+                <h2 data-i18n="test_knowledge">Test your knowledge about Brazil:</h2>
+                <a href="quiz.html" class="quiz-button" data-i18n="go_to_quiz">🎯 Go to Quiz</a>
+              </div>              
+        </section>
+
+    </main>    
+
+    <footer>
+        <p>🌎 Multicultural Day – Brazil | Made by Meiry Diniz &copy; 2025</p>
+      </footer>      
+
+    <script src="script.js"></script>
 </body>
+
 </html>

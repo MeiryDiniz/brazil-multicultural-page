@@ -1,4 +1,5 @@
-/* Reset default spacing */
+
+/* Reset spacing and box model */
 * {
     margin: 0;
     padding: 0;
@@ -11,6 +12,7 @@
     color: #333;
     line-height: 1.6;
     padding: 20px;
+    position: relative;
   }
   
   /* Header */
@@ -20,18 +22,42 @@
     padding: 20px;
     border-radius: 8px;
     margin-bottom: 20px;
+    position: relative;
   }
   
-  header h1 {
-    font-size: 2em;
+  header h1,
+  header p {
+    text-align: center;
   }
   
-  header select {
-    margin-top: 10px;
-    padding: 5px;
+  /* Google Translate box styling */
+  #google_translate_element {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    background: white;
+    border-radius: 6px;
+    padding: 2px 6px;
+    font-size: 0.75rem;
+    box-shadow: 0 0 4px rgba(0,0,0,0.2);
+    line-height: 1;
   }
   
-  /* Main sections */
+  .goog-te-gadget {
+    font-size: 0.75rem !important;
+    line-height: 1.2;
+    color: #000 !important;
+    font-weight: normal;
+  }
+  
+  .goog-te-combo {
+    font-size: 0.75rem !important;
+    padding: 2px !important;
+    height: auto !important;
+  }
+  
+  /* Sections */
   main section {
     background-color: white;
     padding: 20px;
@@ -87,13 +113,7 @@
     color: #008000;
   }
   
-  /* Footer */
-  footer {
-    text-align: center;
-    margin-top: 40px;
-    color: #444;
-    font-size: 0.9em;
-  }
+  /* Navigation buttons */
   .quiz-button {
     display: inline-block;
     margin-top: 10px;
@@ -104,7 +124,36 @@
     border-radius: 5px;
     font-weight: bold;
   }
+  
   .quiz-button:hover {
     background-color: #004d00;
   }
-    
+  
+  /* Gallery grid */
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px 0;
+  }
+  
+  .gallery img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  }
+  
+  .gallery-caption {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 8px;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    margin-top: 40px;
+    color: #444;
+    font-size: 0.9em;
+  }

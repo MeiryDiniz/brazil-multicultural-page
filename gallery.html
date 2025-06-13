@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title data-i18n="gallery_title">Photo Gallery</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      padding: 20px 0;
+    }
+
+    .gallery-item {
+      text-align: center;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+
+    .gallery-caption {
+      margin-top: 8px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1 data-i18n="gallery_title">Photo Gallery</h1>
+    <p data-i18n="gallery_intro">Beautiful places in Brazil and my city, Maringá.</p>
+
+    <!-- Google Translate -->
+    <div id="google_translate_element"></div>
+    <script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+          { pageLanguage: 'en' },
+          'google_translate_element'
+        );
+      }
+    </script>
+    <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  </header>
+
+  <main>
+    <div class="gallery">
+      <div class="gallery-item">
+        <img src="assets/images/inga.jpg" alt="Parque do Ingá" />
+        <p class="gallery-caption">Parque do Ingá – Maringá</p>
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/catedral.jpg" alt="Catedral de Maringá" />
+        <p class="gallery-caption">Catedral – Maringá</p>
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/japao.jpg" alt="Parque do Japão" />
+        <p class="gallery-caption">Parque do Japão – Maringá</p>
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/amazon.jpg" alt="Amazon Rainforest" />
+        <p class="gallery-caption">Amazon Rainforest</p>
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/festa-junina.jpg" alt="Festa Junina" />
+        <p class="gallery-caption">Festa Junina (São João)</p>
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/iguacu.jpg" alt="Iguaçu Falls" />
+        <p class="gallery-caption">Cataratas do Iguaçu – Paraná</p>
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/cristo.jpg" alt="Cristo Redentor" />
+        <p class="gallery-caption">Cristo Redentor – Rio de Janeiro</p>
+      </div>
+    </div>
+
+    <p><a href="index.html" class="quiz-button" data-i18n="back_to_main">← Back to Main Page</a></p>
+  </main>
+
+  <footer>
+    <p>🌎 Multicultural Day – Brazil | Made by Meiry Diniz &copy; 2025</p>
+  </footer>
+    
+</body>
+</html>
